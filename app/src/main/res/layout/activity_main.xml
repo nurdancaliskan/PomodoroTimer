@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:paddingTop="24dp"
+        android:src="@drawable/logo"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".7"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight=".5"
+        android:background="@drawable/alt_1svg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="-100dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="center"
+            android:src="@drawable/start1"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="-100dp"
+            android:layout_marginEnd="-100dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="center"
+            android:src="@drawable/start1"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
